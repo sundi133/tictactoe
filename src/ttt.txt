@@ -1,0 +1,362 @@
+
+
+Problem 3. 
+tic tac toe:
+A. WITH PRUNING: the main function whiCH checks the best furture moves is Best_MoveWithPruning(). Each of the board positions is evaluated using Evaluate() function.It also applies pruning at each level based on max or min value.
+
+trace:
+Board configuration:
+
+ 1 | 2 | 3
+
+---+---+---
+
+ 4 | 5 | 6
+
+---+---+---
+
+ 7 | 8 | 9
+
+
+
+enter position's as per with board configurations : O denotes you, X denotes machine
+
+ Do you want to move first? press 1 if yes else 2 : 
+1
+   |   |   
+
+---+---+---
+
+   |   |   
+
+---+---+---
+
+   |   |   
+
+
+
+Move #1 - What is your move (+O 's) : ? 
+5
+   |   |   
+
+---+---+---
+
+   | O |   
+
+---+---+---
+
+   |   |   
+
+
+
+265 nodes examined.
+
+debug moved to 1
+Move #2 - X moves to 1
+
+ X |   |   
+
+---+---+---
+
+   | O |   
+
+---+---+---
+
+   |   |   
+
+
+
+Move #3 - What is your move (+O 's) : ? 
+3
+ X |   | O 
+
+---+---+---
+
+   | O |   
+
+---+---+---
+
+   |   |   
+
+
+
+23 nodes examined.
+
+debug moved to 7
+Move #4 - X moves to 7
+
+ X |   | O 
+
+---+---+---
+
+   | O |   
+
+---+---+---
+
+ X |   |   
+
+
+
+Move #5 - What is your move (+O 's) : ? 
+4
+ X |   | O 
+
+---+---+---
+
+ O | O |   
+
+---+---+---
+
+ X |   |   
+
+
+
+12 nodes examined.
+
+debug moved to 6
+Move #6 - X moves to 6
+
+ X |   | O 
+
+---+---+---
+
+ O | O | X 
+
+---+---+---
+
+ X |   |   
+
+
+
+Move #7 - What is your move (+O 's) : ? 
+2
+ X | O | O 
+
+---+---+---
+
+ O | O | X 
+
+---+---+---
+
+ X |   |   
+
+
+
+3 nodes examined.
+
+debug moved to 8
+Move #8 - X moves to 8
+
+ X | O | O 
+
+---+---+---
+
+ O | O | X 
+
+---+---+---
+
+ X | X |   
+
+
+
+Move #9 - What is your move (+O 's) : ? 
+9
+ X | O | O 
+
+---+---+---
+
+ O | O | X 
+
+---+---+---
+
+ X | X | O 
+
+
+
+Match Drawn.
+
+
+Continue ? 1 for Yes, 2 for No 
+
+
+
+A. WITHOUT PRUNING: the main function whiCH checks the best furture moves is Best_MoveWithoutPruning(). Each of the board positions is evaluated using Evaluate() function. No pruning applied here. As seen the number of nodes expanded without pruning is much more than with pruning.
+
+
+Trace:
+Board configuration:
+
+ 1 | 2 | 3
+
+---+---+---
+
+ 4 | 5 | 6
+
+---+---+---
+
+ 7 | 8 | 9
+
+
+
+enter position's as per with board configurations : O denotes you, X denotes machine
+
+ Do you want to move first? press 1 if yes else 2 : 
+1
+   |   |   
+
+---+---+---
+
+   |   |   
+
+---+---+---
+
+   |   |   
+
+
+
+Move #1 - What is your move (+O 's) : ? 
+5
+   |   |   
+
+---+---+---
+
+   | O |   
+
+---+---+---
+
+   |   |   
+
+
+
+29633 nodes examined.
+
+debug moved to 1
+Move #2 - X moves to 1
+
+ X |   |   
+
+---+---+---
+
+   | O |   
+
+---+---+---
+
+   |   |   
+
+
+
+Move #3 - What is your move (+O 's) : ? 
+3
+ X |   | O 
+
+---+---+---
+
+   | O |   
+
+---+---+---
+
+   |   |   
+
+
+
+492 nodes examined.
+
+debug moved to 7
+Move #4 - X moves to 7
+
+ X |   | O 
+
+---+---+---
+
+   | O |   
+
+---+---+---
+
+ X |   |   
+
+
+
+Move #5 - What is your move (+O 's) : ? 
+4
+ X |   | O 
+
+---+---+---
+
+ O | O |   
+
+---+---+---
+
+ X |   |   
+
+
+
+30 nodes examined.
+
+debug moved to 6
+Move #6 - X moves to 6
+
+ X |   | O 
+
+---+---+---
+
+ O | O | X 
+
+---+---+---
+
+ X |   |   
+
+
+
+Move #7 - What is your move (+O 's) : ? 
+2
+ X | O | O 
+
+---+---+---
+
+ O | O | X 
+
+---+---+---
+
+ X |   |   
+
+
+
+3 nodes examined.
+
+debug moved to 8
+Move #8 - X moves to 8
+
+ X | O | O 
+
+---+---+---
+
+ O | O | X 
+
+---+---+---
+
+ X | X |   
+
+
+
+Move #9 - What is your move (+O 's) : ? 
+9
+ X | O | O 
+
+---+---+---
+
+ O | O | X 
+
+---+---+---
+
+ X | X | O 
+
+
+
+Match Drawn.
+
+
+Continue ? 1 for Yes, 2 for No 
+
+
+
+
